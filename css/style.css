@@ -25638,3 +25638,70 @@ header.fixed .header-top {
     border-radius: 0.5rem;
     text-align: center;
   }
+
+  .gioithieu_bieudo {
+    position: relative;
+    padding: 30px 0 50px;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url(../images/backgrounds/bgt-bieudo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gioithieu_bieudo {
+    background-color: #2c3e50; /* Màu nền tối */
+    padding: 40px 0;
+}
+
+.gioithieu_bieudo h2 {
+    color: #fff; /* Màu trắng cho tiêu đề */
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation-duration: 1s; /* Thời gian hiệu ứng zoomIn */
+}
+
+.gioithieu_bieudo em {
+    color: #f1c40f; /* Màu vàng nhạt cho chú thích */
+    font-size: 18px;
+}
+
+.gioithieu_bieudo .clearfix {
+    display: flex;
+    justify-content: space-between; /* Chia đều khoảng cách giữa các biểu đồ */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gioithieu_bieudo .clearfix .col-md-6 {
+    flex: 1 1 22%; /* Cố định kích thước cho mỗi biểu đồ (khoảng 22% chiều rộng) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng khi hover */
+}
+
+.gioithieu_bieudo .clearfix .col-md-6:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+.gioithieu_bieudo img {
+    border-radius: 8px; /* Bo góc cho ảnh */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho biểu đồ */
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .gioithieu_bieudo .clearfix .col-md-6 {
+        flex: 1 1 48%; /* Hai biểu đồ trên một hàng cho màn hình nhỏ hơn */
+    }
+}
+
+@media (max-width: 768px) {
+    .gioithieu_bieudo .clearfix .col-md-6 {
+        flex: 1 1 100%; /* Một biểu đồ trên một hàng cho màn hình nhỏ hơn */
+    }
+}

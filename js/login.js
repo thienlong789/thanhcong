@@ -9,8 +9,10 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const correctUsername = 'admin';
     const correctPassword = '123456';
 
+    const correctUsername2 = 'admin2';
+
     // Kiểm tra đăng nhập
-    if (username === correctUsername && password === correctPassword) {
+    if ((username === correctUsername || username === correctUsername2) && password === correctPassword) {
         // Lưu trạng thái đăng nhập vào localStorage (hoặc sessionStorage nếu bạn muốn lưu trong session)
         localStorage.setItem('isLoggedIn', 'true');
         localStorage.setItem('username', username);
@@ -21,7 +23,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
         // Điều hướng sau khi đăng nhập thành công
         setTimeout(() => {
-            window.location.href = 'home.html'; // Điều hướng đến trang chính sau khi đăng nhập
+            window.location.href = 'dautu.html'; // Điều hướng đến trang chính sau khi đăng nhập
         }, 1000);
     } else {
         // Nếu thông tin đăng nhập không đúng
